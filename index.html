@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script src="main.js" defer></script>
     <script
       src="https://kit.fontawesome.com/8526c6b977.js"
@@ -13,8 +17,8 @@
   </head>
   <body>
     <!-- logo -->
-    <header class="logo">
-      <div>
+    <header>
+      <div class="logo">
         <i class="fab fa-youtube"></i>
         <span class="logo__title">Youtube</span>
       </div>
@@ -29,87 +33,93 @@
       <video controls src="video/video.mp4"></video>
     </section>
 
-    <!-- video information -->
-    <section class="info">
-      <!-- info metadata -->
-      <div class="info__matadata">
-        <ul class="videoHashtag">
-          <li>#Man</li>
-          <li>#Music</li>
-          <li>#Seoul</li>
-        </ul>
-        <div class="videoTitleAndBtn">
-          <span class="title Clamp">
-            Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
-            만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript 드림코딩과
-            함께하는 프론트엔드 실전 입문편
+    <!-- Video info & Up next -->
+    <div class="infoAndUpNext">
+      <!-- video information -->
+      <section class="info">
+        <!-- info metadata -->
+        <div class="info__matadata">
+          <ul class="videoHashtag">
+            <li>#Man</li>
+            <li>#Music</li>
+            <li>#Seoul</li>
+          </ul>
+          <div class="videoTitleAndBtn">
+            <span class="title Clamp">
+              Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
+              만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+              드림코딩과 함께하는 프론트엔드 실전 입문편
+            </span>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <span class="videoViews">
+            1M views 1 month ago
           </span>
-          <button class="moreBtn">
-            <i class="fas fa-caret-down"></i>
-          </button>
         </div>
-        <div class="videoViews">
-          1M views 1 month ago
-        </div>
-      </div>
 
-      <!-- info actions -->
-      <ul class="info__actions">
-        <li>
-          <button>
-            <i class="active fas fa-thumbs-up"></i><span>1K</span>
-          </button>
-        </li>
-        <li>
-          <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
-        </li>
-        <li>
-          <button><i class="fas fa-share"></i><span>Share</span></button>
-        </li>
-        <li>
-          <button><i class="fas fa-plus"></i><span>Save</span></button>
-        </li>
-        <li>
-          <button>
-            <i class="fab fa-font-awesome-flag"></i><span>Report</span>
-          </button>
-        </li>
-      </ul>
+        <!-- info actions -->
+        <ul class="info__actions">
+          <li>
+            <button>
+              <i class="like fas fa-thumbs-up"></i><span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="unlike fas fa-thumbs-down"></i><span>0</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+            </button>
+          </li>
+        </ul>
 
-      <!-- info channel -->
-      <div class="info__channel">
-        <div class="user">
-          <img class="userImage" src="img/profile.jpg" alt="profile" />
-          <div class="userInfo">
-            <span>홍튜브</span>
-            <span>1M subscriber</span>
+        <!-- info channel -->
+        <div class="info__channel">
+          <div class="user">
+            <img class="userImage" src="img/profile.jpg" alt="profile" />
+            <div class="userInfo">
+              <span class="user__name">홍튜브</span>
+              <span class="user__subscribers">1M subscriber</span>
+            </div>
           </div>
+          <button class="subscribe">subscribe</button>
         </div>
-        <button class="subscribe">subscribe</button>
-      </div>
-    </section>
+      </section>
 
-    <!-- upNext video -->
-    <section class="upNext">
-      <span class="title">Up next</span>
-      <ul class="items">
-        <li class="item">
-          <div class="item__img"><img src="img/1.jpg" alt="" /></div>
-          <div class="itemInfo">
-            <span class="itemInfo__title">
-              프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편
-              강의를 시작합니다 ⭐️ (HTML, CSS, Javascript + 실전 프로젝트)
-            </span>
-            <span class="itemInfo__user">
-              홍튜브
-            </span>
-            <span class="itemInfo__views">
-              82K views
-            </span>
-          </div>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-      </ul>
-    </section>
+      <!-- upNext video -->
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul class="items">
+          <li class="item">
+            <div class="img"><img src="img/1.jpg" alt="" /></div>
+            <div class="itemInfo">
+              <span class="itemInfo__title">
+                프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발
+                입문자편 강의를 시작합니다 ⭐️ (HTML, CSS, Javascript + 실전
+                프로젝트)
+              </span>
+              <span class="itemInfo__user">
+                홍튜브
+              </span>
+              <span class="itemInfo__views">
+                82K views
+              </span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
