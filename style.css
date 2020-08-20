@@ -96,6 +96,9 @@ header .logo__icons .fa-search {
 
 .info .info__matadata .videoTitleAndBtn .title {
   font-size: var(--font-medium);
+}
+
+.info .info__matadata .videoTitleAndBtn .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -103,9 +106,17 @@ header .logo__icons .fa-search {
   margin-right: var(--spacing);
 }
 
+
 .info .info__matadata .videoTitleAndBtn .moreBtn {
   height: 100%;
+  transition: transform 300ms ease-in-out;
 }
+
+
+.info .info__matadata .videoTitleAndBtn .moreBtn.animation {
+  transform: rotate(180deg);
+}
+
 
 .info .info__matadata .videoViews {
   font-size: var(--font-small);
@@ -187,6 +198,11 @@ header .logo__icons .fa-search {
   font-size: var(--font-medium);
   color: var(--grey-dark-color);
   margin-bottom: calc(var(--spacing) / 2);
+}
+
+.upNext .items {
+  height: 60%;
+  overflow-y: scroll;
 }
 
 .upNext .item {

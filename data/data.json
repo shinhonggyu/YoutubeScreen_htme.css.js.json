@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "image": "../img/1.jpg",
+      "user": "홍튜브",
+      "views": "82K views"
+    },
+    {
+      "image": "../img/2.jpg",
+      "user": "신투부",
+      "views": "100 views"
+    },
+    {
+      "image": "../img/3.jpg",
+      "user": "규튜브",
+      "views": "200 views"
+    }
+  ]
+}
